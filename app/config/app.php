@@ -65,7 +65,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => 'asdfaksj745aKjdhfiajdldfo8',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -115,7 +115,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Rtablada\TrafficSigns\TrafficSignsServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
-		'Authority\AuthorityL4\AuthorityL4ServiceProvider',
+		//'Atticmedia\Anvard\AnvardServiceProvider',
 
 	),
 
@@ -181,7 +181,6 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-		'Authority' => 'Authority\AuthorityL4\Facades\Authority',
 
 	),
 

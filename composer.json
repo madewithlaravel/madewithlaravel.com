@@ -2,11 +2,9 @@
 	"require": {
 		"laravel/framework": "4.0.*",
 		"rtablada/traffic-signs": "dev-master",
-		"jasonlewis/basset": "dev-master",
 		"intervention/image": "dev-master",
 		"jasonlewis/expressive-date": "1.0.*",
-		"way/generators": "dev-master",
-		"machuga/authority-l4" : "dev-master"
+		"way/generators": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
