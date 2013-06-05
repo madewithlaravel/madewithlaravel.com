@@ -26,6 +26,7 @@ web1:
     - app/storage/views
     - app/storage/
     - public/uploads
+    - public/builds
   after_build:
     - "chmod +x deploy.sh"
     - "./deploy.sh"
