@@ -6,7 +6,7 @@
 		"intervention/image": "dev-master",
 		"jasonlewis/expressive-date": "1.0.*",
 		"way/generators": "dev-master",
-		"cartalyst/sentry": "2.0.*"
+		"machuga/authority-l4" : "dev-master"
 	},
 	"autoload": {
 		"classmap": [
