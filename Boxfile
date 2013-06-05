@@ -27,7 +27,8 @@ web1:
     - app/storage/
     - public/uploads
   after_build:
-    - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; php composer.phar install --prefer-source"
+    - "chmod +x deploy.sh"
+    - "./deploy.sh"
   after_deploy:
     - "rm -f app/storage/cache/*"
     - "rm -f app/storage/views/*"
