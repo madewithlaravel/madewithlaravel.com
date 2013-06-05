@@ -15,11 +15,10 @@ return array(
     | a couple of assumptions about your directory structure.
     |
     | /public
-    |    /assets
-    |        /stylesheets
+    |    /src
+    |        /styles
     |            /less
-    |            /sass
-    |        /javascripts
+    |        /scripts
     |            /coffeescripts
     |
     | You can overwrite this collection or remove it by publishing the config.
