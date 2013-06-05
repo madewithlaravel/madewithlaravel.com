@@ -1,27 +1,37 @@
 global:
-  env:
-    - LARAVEL_ENV: production
+
 web1:
-  after_build:
-    - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; php composer.phar install"
-  name: application name
+  php_upload_max_filesize: "20M"
+  php_post_max_size: "20M"
+  name: laravelapp
   shared_writable_dirs:
-    - /app/storage/cache
-    - /app/storage/logs
-    - /app/storage/meta
-    - /app/storage/sessions
-    - /app/storage/views
-  document_root: public
-  php_version: 5.3.10
+    - /storage/cache
+    - /storage/database
+    - /storage/logs
+    - /storage/sessions
+    - /storage/views
+    - /storage/work
+    # - /public/uploads uncomment this if users store uploads
+  document_root: /public
+  php_version: 5.4.14
   php_extensions:
-    - zip
+    - curl
+    - memcached
+    - imagick
+    - mbstring
     - pdo_mysql
     - mcrypt
+    - gd
     - eaccelerator
-    - memcached
+  # after_build: uncomment this you need composer
+    # - "curl -s https://getcomposer.org/installer | php"
+    # - "php composer.phar install"
   before_deploy:
     - "php artisan migrate:install"
     - "php artisan migrate"
   after_deploy:
-    - "rm -f app/storage/cache/*"
-    - "rm -f app/storage/views/*"
+    - "rm -f storage/cache/*"
+    - "rm -f storage/views/*"
+db1:
+  name: laravelapp
+  type: mysql
