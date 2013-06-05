@@ -115,7 +115,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Rtablada\TrafficSigns\TrafficSignsServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
-		'Atticmedia\Anvard\AnvardServiceProvider',
+		// 'Atticmedia\Anvard\AnvardServiceProvider',
 
 	),
 
