@@ -13,5 +13,6 @@
         </a>
         <h1>You have arrived.</h1>
     <div>
+        {{File::get(app_path() . '/storage/logs/basset-2013-06-05.txt')}}
 </body>
 </html>
