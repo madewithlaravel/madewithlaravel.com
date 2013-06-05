@@ -27,15 +27,9 @@ $app->redirectIfTrailingSlash();
 */
 
 $env = $app->detectEnvironment(array(
-
-<<<<<<< HEAD
-	'local' => array('Ryan.local'),
-
-=======
 	//'local' => array('your-machine-name'),
 	'dev' => array('localhost','*.dev'),
 	'prod' => array('*.com'),
->>>>>>> 9f6f378dee365e5641bbbae85f2187da881cc0a8
 ));
 
 /*
