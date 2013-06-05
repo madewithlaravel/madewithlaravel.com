@@ -4,9 +4,7 @@
 		"rtablada/traffic-signs": "dev-master",
 		"jasonlewis/basset": "dev-master",
 		"intervention/image": "dev-master",
-		"jasonlewis/expressive-date": "1.0.*"
-	},
-	"require-dev": {
+		"jasonlewis/expressive-date": "1.0.*",
 		"way/generators": "dev-master"
 	},
 	"autoload": {
