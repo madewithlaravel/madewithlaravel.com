@@ -1,14 +1,19 @@
 web1:
+  php_upload_max_filesize: "20M"
+  php_max_execution_time: 300
   document_root: public
   php_version: 5.4.14
   php_extensions:
-    - apc
+    #- apc
     - mbstring
     - pdo_mysql
     - mcrypt
+    - exif
     - gd
+    - imagick
     - curl
     - zip
+    - eaccelerator
   shared_writable_dirs:
     - app/storage/cache
     - app/storage/logs
@@ -16,6 +21,7 @@ web1:
     - app/storage/sessions
     - app/storage/views
     - app/storage/
+    - public/uploads
   after_build:
     - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; php composer.phar install --prefer-source"
   after_deploy:
