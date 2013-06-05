@@ -6,6 +6,9 @@
 		"intervention/image": "dev-master",
 		"jasonlewis/expressive-date": "1.0.*"
 	},
+	"require-dev": {
+		"way/generators": "dev-master"
+	},
 	"autoload": {
 		"classmap": [
 			"app/commands",
