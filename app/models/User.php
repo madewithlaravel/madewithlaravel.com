@@ -49,4 +49,35 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 		return $this->email;
 	}
 
+	/**
+	 * Authority Roles Relationship
+	 * @return relationship
+	 */
+	public function roles() {
+        return $this->belongsToMany('Role');
+    }
+
+    /**
+     * Authority Permissions Relationship
+     * @return relationship
+     */
+    public function permissions() {
+        return $this->hasMany('Permission');
+    }
+
+    /**
+     * Authority hasRole
+     * @param  string  $key
+     * @return boolean
+     */
+    public function hasRole($key) {
+        foreach($this->roles as $role){
+            if($role->name === $key)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
 }
