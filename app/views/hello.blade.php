@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Laravel PHP Framework</title>
     {{HTML::style('http://fonts.googleapis.com/css?family=Lato:300,400,700')}}
-    {{basset_stylesheets('application')}}
+    {{HTML::style('assets/css/hello.less')}}
 </head>
 <body>
     <div class="welcome">
