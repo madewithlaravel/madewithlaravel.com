@@ -115,7 +115,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Rtablada\TrafficSigns\TrafficSignsServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
-		//'Atticmedia\Anvard\AnvardServiceProvider',
+		'Basset\BassetServiceProvider',
 
 	),
 
@@ -181,6 +181,7 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+		'Basset'          => 'Basset\Facade',
 
 	),
 
