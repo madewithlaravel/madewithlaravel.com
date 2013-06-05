@@ -33,7 +33,7 @@ return array(
             // Switch to the stylesheets directory and require the "less" and "sass" directories.
             // These directories both have a filter applied to them so that the built
             // collection will contain valid CSS.
-            $directory = $collection->directory('assets/stylesheets', function($collection)
+            $directory = $collection->directory('src/styles', function($collection)
             {
                 $collection->requireDirectory('less')->apply('Less');
                 $collection->requireDirectory('sass')->apply('Sass');
@@ -46,9 +46,9 @@ return array(
             // Switch to the javascripts directory and require the "coffeescript" directory. As
             // with the above directories we'll apply the CoffeeScript filter to the directory
             // so the built collection contains valid JS.
-            $directory = $collection->directory('assets/javascripts', function($collection)
+            $directory = $collection->directory('assets/scripts', function($collection)
             {
-                $collection->requireDirectory('coffeescripts')->apply('CoffeeScript');
+                $collection->requireDirectory('coffee')->apply('CoffeeScript');
                 $collection->requireDirectory();
             });
 
