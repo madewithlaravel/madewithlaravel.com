@@ -17,7 +17,7 @@ web1:
     - imagick
     - curl
     - zip
-    - eaccelerator
+    #- eaccelerator
   shared_writable_dirs:
     - app/storage/cache
     - app/storage/logs
