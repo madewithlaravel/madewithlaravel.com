@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Laravel PHP Framework</title>
     {{HTML::style('http://fonts.googleapis.com/css?family=Lato:300,400,700')}}
-    {{HTML::style('assets/css/hello.less')}}
 </head>
 <body>
     <div class="welcome">
@@ -13,6 +12,5 @@
         </a>
         <h1>You have arrived.</h1>
     <div>
-        {{File::get(app_path() . '/storage/logs/basset-2013-06-05.txt')}}
 </body>
 </html>
