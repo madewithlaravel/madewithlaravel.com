@@ -114,13 +114,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Rtablada\TrafficSigns\TrafficSignsServiceProvider',
-<<<<<<< HEAD
 
-=======
-		'Way\Generators\GeneratorsServiceProvider',
-		'Way\Console\GuardLaravelServiceProvider',
-		'Zizaco\Entrust\EntrustServiceProvider',
->>>>>>> 95b5f084db132c4570991456e0a1f656367f701d
 	),
 
 	/*
@@ -185,7 +179,7 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-		'Entrust'    => 'Zizaco\Entrust\EntrustFacade',
+
 	),
 
 );

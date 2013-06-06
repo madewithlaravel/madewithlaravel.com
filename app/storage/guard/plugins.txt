@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ["concat-js","concat-css","refresher","phpunit","livereload","less","coffeescript"]
+=======
+["concat-js","concat-css","refresher","phpunit","livereload","less"]
+>>>>>>> 95b5f084db132c4570991456e0a1f656367f701d

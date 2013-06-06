@@ -9,7 +9,13 @@
 		"laravel/framework": "4.0.*",
 		"rtablada/traffic-signs": "dev-master",
 		"intervention/image": "dev-master",
+<<<<<<< HEAD
 		"jasonlewis/expressive-date": "1.0.*"
+=======
+		"jasonlewis/expressive-date": "1.0.*",
+		"way/generators": "dev-master",
+		"zizaco/entrust": "dev-master"
+>>>>>>> 95b5f084db132c4570991456e0a1f656367f701d
 	},
 	"require-dev": {
 		"way/generators": "dev-master",
