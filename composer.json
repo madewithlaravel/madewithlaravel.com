@@ -1,13 +1,19 @@
 {
+	"repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/rtablada/simple-guardbuilder"
+        }
+    ],
 	"require": {
 		"laravel/framework": "4.0.*",
 		"rtablada/traffic-signs": "dev-master",
 		"intervention/image": "dev-master",
-		"jasonlewis/expressive-date": "1.0.*",
-		"way/generators": "dev-master"
+		"jasonlewis/expressive-date": "1.0.*"
 	},
 	"require-dev": {
-		"way/guard-laravel": "dev-master"
+		"way/generators": "dev-master",
+		"rtablada/simple-guardbuilder": "0.0.*"
 	},
 	"autoload": {
 		"classmap": [
