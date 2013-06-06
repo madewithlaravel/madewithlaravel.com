@@ -4,6 +4,8 @@ guard :less, :all_on_start => true, :all_on_start => false, :output => 'public/s
 end
 guard :concat, :type => "css", :files => %w[laravel], :input_dir => "public/src/css", :output => "public/assets/css/hello"
 guard :concat, :type => "js", :files => %w[], :input_dir => "public/src/js", :output => "public/src/js/hello"
+guard :concat, :type => "css", :files => %w[bootstrap], :input_dir => "public/src/css", :output => "public/assets/css/madewithlaravel"
+guard :concat, :type => "js", :files => %w[], :input_dir => "public/src/js", :output => "public/src/js/madewithlaravel"
 
 # Refresh the browser on save
 guard 'livereload' do

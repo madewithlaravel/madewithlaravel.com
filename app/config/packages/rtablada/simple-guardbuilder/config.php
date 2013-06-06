@@ -20,6 +20,15 @@ return array(
 				''
 			)
 		),
+		'madewithlaravel' => array(
+			'styles' => array(
+				'bootstrap',
+				''
+			),
+			'scripts' => array(
+				''
+			)
+		)
 	),
 
 	/*
