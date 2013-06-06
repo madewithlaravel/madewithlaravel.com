@@ -12,9 +12,9 @@ return array(
 	|
 	*/
 	'pipelines' => array(
-		'application' => array(
+		'hello' => array(
 			'styles' => array(
-				''
+				'laravel'
 			),
 			'scripts' => array(
 				''

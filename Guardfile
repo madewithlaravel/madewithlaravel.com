@@ -1,12 +1,9 @@
 guard :coffeescript, :input => "app/assets/coffee", :output => "public/src/js"
-
-guard :concat, :type => "css", :files => %w[app boostrap], :input_dir => "public/src/css", :output => "public/src/styles/styles.min"
-
-guard :concat, :type => "js", :files => %w[], :input_dir => "public/src/js", :output => "public/src/scripts/scripts.min"
-
-guard :less, :all_on_start => true, :all_on_start => false, :output => 'public/src/styles' do
-	watch(%r[^app/assets/less/(.+\.less)$])
+guard :less, :all_on_start => true, :all_on_start => false, :output => 'public/src/css' do
+  watch(%r[^app/assets/less/(.+\.less)$])
 end
+guard :concat, :type => "css", :files => %w[laravel], :input_dir => "public/src/css", :output => "public/assets/css/hello"
+guard :concat, :type => "js", :files => %w[], :input_dir => "public/src/js", :output => "public/src/js/hello"
 
 # Refresh the browser on save
 guard 'livereload' do
@@ -24,43 +21,4 @@ guard :phpunit, :all_on_start => false, :tests_path => 'app/tests/', :cli => '--
   # When a file is edited, try to run its associated test.
   # Save app/models/User.php, and it will run app/tests/models/UserTest.php
   watch(%r{^app/(.+)/(.+)\.php$}) { |m| "app/tests/#{m[1]}/#{m[2]}Test.php"}
-end
-
-module ::Guard
-  class Refresher < Guard
-    def run_all
-      # refresh
-    end
-
-    def run_on_additions(paths)
-      refresh
-    end
-
-    def run_on_removals(paths)
-      refresh
-    end
-
-    def refresh
-      `php artisan guard:refresh`
-    end
-  end
-end
-
-require 'cssmin'
-require 'jsmin'
-
-guard :refresher do
-  watch(%r[public/src/scripts/.+])
-  watch(%r[public/src/styles/.+])
-  watch(%r{app/config/packages/way/guard-laravel/guard.php}) do |m|
-    `php artisan guard:refresh`
-  end
-  watch('public/src/styles/styles.min.css') do |m|
-    css = File.read(m[0])
-    File.open(m[0], 'w') { |file| file.write(CSSMin.minify(css)) }
-  end
-  watch('public/src/scripts/scripts.min.js') do |m|
-    js = File.read(m[0])
-    File.open(m[0], 'w') { |file| file.write(JSMin.minify(js)) }
-  end
 end
