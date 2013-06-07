@@ -11,7 +11,7 @@
         <a href="http://laravel.com" title="Laravel PHP Framework">
             <?php echo HTML::image('assets/img/laravel.png') ?>
         </a>
-        <h1>You have arrived.</h1>
+        <h1>The future home of projects Made With Laravel.</h1>
     <div>
 </body>
 </html>
