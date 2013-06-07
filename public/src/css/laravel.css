@@ -5,12 +5,12 @@ body {
   color: #999;
 }
 .welcome {
-  width: 300px;
+  width: 400px;
   height: 300px;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -150px;
+  margin-left: -200px;
   margin-top: -150px;
 }
 a,
