@@ -15,9 +15,26 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	protected $layout = 'layouts.main';
+
+	public function getIndex()
 	{
-		return View::make('hello');
+		$this->layout->content = View::make('home.login');
+	}
+
+	public function getGrid()
+	{
+		$this->layout->content = View::make('home.grid');
+	}
+
+	public function getRegister()
+	{
+		$this->layout->content = View::make('home.register');
+	}
+
+	public function getList()
+	{
+		$this->layout->content = View::make('home.list');
 	}
 
 }

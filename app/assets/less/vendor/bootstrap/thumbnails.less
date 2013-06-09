@@ -32,6 +32,29 @@
   .border-radius(@baseBorderRadius);
   .box-shadow(0 1px 3px rgba(0,0,0,.055));
   .transition(all .2s ease-in-out);
+
+  ul.stars {
+      color: @nicered;
+      border-top: #ccc 2px solid;
+      padding-top: 10px;
+      list-style: none;
+      margin: 0;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      >li{
+        //width: auto;
+        display: inline-block;
+        //padding-top: 10px !important;
+        //padding-bottom: 10px !important;
+      }
+      >li.votes{
+        color: @textColor;
+        padding-left: 45px;
+        float: right;
+      }
+      
+
+  }
 }
 // Add a hover/focus state for linked versions only
 a.thumbnail:hover,

@@ -4,7 +4,8 @@
 		"rtablada/traffic-signs": "dev-master",
 		"intervention/image": "dev-master",
 		"jasonlewis/expressive-date": "1.0.*",
-		"zizaco/entrust": "dev-master"
+		"zizaco/entrust": "dev-master",
+		"anahkiasen/former": "dev-agnostic"
 	},
 	"require-dev": {
 		"way/generators": "dev-master",
